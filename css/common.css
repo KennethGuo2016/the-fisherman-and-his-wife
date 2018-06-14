@@ -1,0 +1,174 @@
+html {
+	width: 100%;
+	height: 100%;
+	min-width: 40em;
+	overflow-x: scroll;
+	color: white;
+	font-family:"Lato", "Times New Roman", Times, serif;
+}
+
+nav {
+	height: 2.9em;
+	width: 100%;
+	background-color: #006994;
+	position: fixed;
+	font-size: 20pt;
+	font-weight: bold;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+nav ul{
+	list-style: none;
+	display: flex;
+}
+
+.main {
+	padding: 1em 0.5em 0.6em 0.5em; 
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+nav img {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.main:hover {
+	color: #DCDCDC;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover {
+	color: #DCDCDC;
+	cursor: pointer;
+	text-decoration: none;
+} 
+
+.dropdown-content {
+	margin-top: 15px;
+	padding: 1px 0 1em 0;
+	display: none;
+    width: 8em;
+	height: 11em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav ul li:first-child{
+		position: relative;
+		left: 6em;
+		bottom: 18px;
+}
+
+nav ul li:nth-child(2){
+	position: relative;
+	left: 6.5em;
+	font-family: Cinzel;
+}
+
+nav ul li:last-child {
+	position: absolute;
+	left: 40em;
+}
+.dropdown {
+	position: absolute;
+	left: 35em;
+}
+
+@media only screen and (max-width: 600px) {
+	nav ul li:first-child{
+		position: relative;
+		left: 0em;
+		bottom: 18px;
+	}
+
+	nav ul li:nth-child(2){
+		display: none;
+	}
+
+	nav ul li:last-child {
+		position: absolute;
+		left: 10em;
+	}
+	.dropdown {
+		position: absolute;
+		left: 5em;
+	}
+}
+
+@media only screen and (max-width: 1190px) and (min-width: 1000px) {
+	nav ul li:first-child{
+		position: relative;
+		left: 3em;
+		bottom: 18px;
+	}
+
+	nav ul li:nth-child(2){
+		position: relative;
+		left: 6.5em;
+		font-family: Cinzel;
+	}
+
+	nav ul li:last-child {
+		position: absolute;
+		left: 80%;
+	}
+	.dropdown {
+		position: absolute;
+		left: 70%;
+	}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+	nav ul li:first-child{
+		position: relative;
+		left: 3em;
+		bottom: 18px;
+	}
+
+	nav ul li:nth-child(2){
+		display: none;
+	}
+
+	nav ul li:last-child {
+		position: absolute;
+		left: 80%;
+	}
+	.dropdown {
+		position: absolute;
+		left: 60%;
+	}
+}
+
+.dropdown-content a {
+	margin-left: 1em;
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+	animation: 1s fadeIn;
+	font-size: 15pt;
+    display: block;
+	color: white;
+	background-color: #4682B4;
+}
+
+.dropdown .dropdown-content::before {
+    content: "";
+    position: absolute;
+    bottom: 12em;
+	left: 2em;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #4682B4 transparent;
+}
+
+@keyframes fade-in{
+	from {opacity: 0}
+    to {opacity: 1}
+}

@@ -1,0 +1,153 @@
+body {
+	font-size: 16pt;
+}
+
+section {
+	line-height: 1.5em;
+	height: 23em;
+	padding: 3em 0 4em 0;
+	color: black;
+	display: flex;
+	align-items: center;
+}
+
+section:last-child {
+	height: 100%;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#container {
+	margin-top: 4em;
+}
+
+.content {
+	width: 75%;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+#author img {
+	width: 290px; 
+	height: 191px;
+
+}
+
+#image-text {
+	display: flex;
+	justify-content: space-between;
+}
+
+#image-text div:first-child {
+	display: flex;
+	align-items: center;
+}
+
+#image-text div:last-child {
+	padding-left: 1em;
+	width: 65%;
+}
+
+@media only screen and (min-width: 414px)  and (max-width: 1000px){
+	#image-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#image-text div:first-child {
+		display: flex;
+		justify-content: center;
+	}
+
+	#image-text div:last-child {
+		width: 97%;
+	}
+
+	#author {
+		height: 35em;
+	}
+
+	#background {
+		height: 30em;
+	}
+
+	#summary {
+		padding-bottom: 10em;
+	}
+
+	#developer {
+		height: 30em;
+	}
+
+}
+
+@media only screen and (max-width: 414px) {
+	#image-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#image-text div:first-child {
+		display: flex;
+		justify-content: center;
+	}
+
+	#image-text div:last-child {
+		width: 97%;
+	}
+
+	#author {
+		height: 35em;
+	}
+
+	#background {
+		height: 30em;
+	}
+
+	#summary {
+		padding-bottom: 5em;
+	}
+
+	#developer {
+		height: 25em;
+	}
+}
+
+#background, #developer {
+	background-color: #4682B4;
+	color: white;
+}
+
+#summary {
+	height: 40em;
+}
+
+.fa {
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+
+.fa-github {
+	background: purple;
+	color: white;
+}
