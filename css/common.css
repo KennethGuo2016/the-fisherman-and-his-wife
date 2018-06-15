@@ -42,7 +42,12 @@ nav img {
 	text-decoration: none;
 }
 
-.dropdown-content a:hover {
+.dropdown a {
+	color: white;
+	text-decoration: none;
+}
+
+.dropdown a:hover {
 	color: #DCDCDC;
 	cursor: pointer;
 	text-decoration: none;
