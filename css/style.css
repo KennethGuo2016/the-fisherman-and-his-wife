@@ -18,7 +18,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 1;
-    transition: 4s opacity;
+    transition: 2s opacity;
 }
 
 .fade-out {
