@@ -102,15 +102,6 @@ nav ul li:last-child {
 		position: absolute;
 		left: 5em;
 	}
-	
-	.dropdown:click .dropdown-content{
-	display: block;
-	animation: 1s fadeIn;
-	font-size: 15pt;
-    display: block;
-	color: white;
-	background-color: #4682B4;
-}
 }
 
 @media only screen and (max-width: 1190px) and (min-width: 1000px) {
